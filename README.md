@@ -5,11 +5,17 @@
 ## Table of Contents | Projects
 
 + Pyramid Generator
++ Roll Playing Game
 
 ### Pyramid Generator summary
 
 In this practice project, you'll learn fundamental programming concepts in JavaScript by coding a `Pyramid Generator`. You'll learn how to work with _`arrays`_, _`strings`_, _`functions`_, _`loops`_, _`if/else`_ statements, and more.
 
+---
+### Roll Playing Game summary
+In this practice project, you'll learn fundamental programming concepts in`JavaScript` by coding a` Role Playing Game`. You'll learn how to work with _`arrays`_, _`strings`_, _`objects`_, _`functions`_, _`loops`_, _`if/else`_ statements, and more.
+
+---
 ### Building Block Basics: Pyramid Project Breakdown
 
 - `Looping:` The project utilizes for loops to _`iterate`_ over rows and columns, which are fundamental programming concepts.
@@ -56,3 +62,5 @@ console.log(rows.join("\n"));
 ```
 
 _Overall, by building this project, beginners would reinforce their understanding of basic programming constructs like `looping`, `conditional statements`, `functions`, and `string manipulation` while creating a visually appealing pattern_.
+
+---
