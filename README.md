@@ -16,7 +16,7 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 In this practice project, you'll learn fundamental programming concepts in`JavaScript` by coding a` Role Playing Game`. You'll learn how to work with _`arrays`_, _`strings`_, _`objects`_, _`functions`_, _`loops`_, _`if/else`_ statements, and more.
 
 ---
-### Building Block Basics: Pyramid Project Breakdown
+### Pyramid Project Breakdown Key Features
 
 - `Looping:` The project utilizes for loops to _`iterate`_ over rows and columns, which are fundamental programming concepts.
 
@@ -64,3 +64,48 @@ console.log(rows.join("\n"));
 _Overall, by building this project, beginners would reinforce their understanding of basic programming constructs like `looping`, `conditional statements`, `functions`, and `string manipulation` while creating a visually appealing pattern_.
 
 ---
+
+### RPG Project Breakdown Key Features
+Game Features Summary:
+
+1. __`Player Attributes`__: The game keeps track of the player's attributes such as experience points (xp), health, gold, current weapon, and inventory.
+
+```javascript
+let xp = 0;
+let health = 100;
+let gold = 50;
+let currentWeapon = 0;
+let inventory = ["stick"];
+
+```
+2. __`Game Locations`__: The game has various locations that the player can navigate through, each with its own set of options and descriptions.
+  
+  ```javascript
+  const locations = [
+  {
+    name: "Town square",
+    "button text": ["Go to store", "Go to cave", "Fight dragon"],
+    "button functions": [goStore, goCave, fightDragon],
+    text: "You are in the town square. You see a sign that says \"Store\"."
+  }
+  // Other location objects...
+  ];
+
+```
+3. __`Player Actions`__: The player can perform actions such as buying health, buying weapons, fighting `monsters`, `dodging attacks`, and initiating `special events`.
+
+```javascript
+function buyHealth() { /* Function to buy health */}
+function buyWeapon() { /* Function to buy a weapon */ }
+function attack() { /* Function to attack a monster */ }
+function dodge() { /* Function to dodge attacks */ }
+function easterEgg() { /* Function to initiate an Easter egg event */ }
+```
+
+4. __`Game Progression`__: The game allows for progression through defeating monsters, winning battles, or reaching specific milestones.
+```javascript
+function defeatMonster() { /* Function to handle defeating a monster */ }
+function lose() { /* Function to handle the player losing the game */ }
+function winGame() { /* Function to handle the player winning the game */ }
+```
+These features provide a comprehensive gameplay experience with various` interactions` and `challenges` for the `player.`
