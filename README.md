@@ -6,14 +6,21 @@
 
 + Pyramid Generator
 + Roll Playing Game
++ Calorie Counter App
 
 ### Pyramid Generator summary
 
 In this practice project, you'll learn fundamental programming concepts in JavaScript by coding a `Pyramid Generator`. You'll learn how to work with _`arrays`_, _`strings`_, _`functions`_, _`loops`_, _`if/else`_ statements, and more.
 
 ---
-### Roll Playing Game summary
+### Role Playing Game summary
 In this practice project, you'll learn fundamental programming concepts in`JavaScript` by coding a` Role Playing Game`. You'll learn how to work with _`arrays`_, _`strings`_, _`objects`_, _`functions`_, _`loops`_, _`if/else`_ statements, and more.
+
+---
+### Calorie Counter App
+
+In this calorie counter project, you'll learn how to validate user input, perform calculations based on that input, and `dynamically` `update your interface` to display the results.
+In this practice project, you'll learn `basic regular expressions`, `template literals`, the `addEventListener() method`, and more.
 
 ---
 ### Pyramid Project Breakdown Key Features
