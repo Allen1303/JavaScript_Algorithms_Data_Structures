@@ -4,9 +4,10 @@
 
 ## Table of Contents | Projects
 
-+ Pyramid Generator
-+ Roll Playing Game
-+ Calorie Counter App
++ __Pyramid Generator__
++ __Roll Playing Game__
++ __Calorie Counter App__
++ __Music Player App__
 
 ### Pyramid Generator summary
 
@@ -21,6 +22,12 @@ In this practice project, you'll learn fundamental programming concepts in`JavaS
 
 In this calorie counter project, you'll learn how to validate user input, perform calculations based on that input, and `dynamically` `update your interface` to display the results.
 In this practice project, you'll learn `basic regular expressions`, `template literals`, the `addEventListener() method`, and more.
+
+---
+### Music Player App
+We will learn about some essential `string` and `array methods` like the `find()`, `forEach()`, `map()`, and `join()`. These methods are `crucial` for developing dynamic web applications.
+
+In this project, we code a basic `MP3 player` using `HTM`L, `CSS`, and `JavaScript`. The project covers fundamental concepts such as handling `audio playback`, `managing a playlist`, `implementing play`, `pause`, `next`, `previous`, and `shuffle functionalities`. You'll even learn how to dynamically update your user interface based on the current song.
 
 ---
 ### Pyramid Project Key Concepts
@@ -226,3 +233,59 @@ This function` resets` the form by `clearing` all input containers and resetting
 + It clears the content of each input container by setting the `innerHTML` to an empty string.
 + It resets the budget number input and output elements by setting their values to empty strings.
 + It also adds the `"hide"` class to the output element to hide the calorie information display.
+
+---
+### Music Player App Key Concepts
+
+1. __DOM Manipulation__:
+```javascript
+const playButton = document.getElementById("play");
+const pauseButton = document.getElementById("pause");
+const nextButton = document.getElementById("next");
+const previousButton = document.getElementById("previous");
+const shuffleButton = document.getElementById("shuffle");
+```
+__Explanation__:
+DOM manipulation is the process of accessing, modifying, or creating HTML elements on a web page using JavaScript. In this code snippet, document.getElementById() is used to select specific elements from the HTML document by their ID attribute, allowing interaction with those elements in JavaScript.
+
+---
+2. __Event Handling__:
+```javascript
+playButton.addEventListener("click", () => {
+  if (userData?.currentSong === null) {
+    playSong(userData?.songs[0].id);
+  } else {
+    playSong(userData?.currentSong.id);
+  }
+});
+```
+__Explanation__:
+Event handling involves responding to user interactions or actions on a web page. Here, the addEventListener() method is used to attach a click event listener to the play button. When the button is clicked, it executes the provided callback function, which determines whether to play the first song or the current song based on the player's state.
+
+---
+3. __Array Manipulation and Iteration__:
+```javascript
+const currentSongIndex = getCurrentSongIndex();
+const nextSong = userData?.songs[currentSongIndex + 1];
+```
+__Explanation__:
+Working with arrays is essential in web development. This project demonstrates array manipulation techniques such as accessing elements, finding indexes, and iterating through arrays to perform specific tasks. In the provided code, the current song index is retrieved, and the next song to play is determined by accessing the next element in the array.
+
+---
+4. __Conditional Logic__:
+```javascript
+if (nextSongExists) {
+  playNextSong();
+} else {
+  userData.currentSong = null;
+  userData.songCurrentTime = 0;
+  pauseSong();
+  setPlayerDisplay();
+  highlightCurrentSong();
+  setPlayButtonAccessibleText();
+}
+```
+__Explanation__:
+Conditional logic allows developers to execute different code blocks based on certain conditions. In this snippet, the code checks if there is a next song to play. If nextSongExists is true, the next song is played; otherwise, the player is reset, and the UI is updated accordingly.
+
+---
