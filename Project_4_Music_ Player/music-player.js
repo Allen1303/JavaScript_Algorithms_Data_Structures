@@ -272,11 +272,15 @@ const renderSongs = (array) => {
 
   playlistSongs.innerHTML = songsHTML;
 };
-*
+
+/**
  * Sets the accessible text for the play button.
  */
 const setPlayButtonAccessibleText = () => {
+  // Get the current song from the user data, or the first song if no current song is available
   const song = userData?.currentSong || userData?.songs[0];
+
+  // Set the aria-label attribute of the play button
   playButton.setAttribute("aria-label", song?.title ? `Play ${song.title}` : "Play");
 };
 
@@ -324,7 +328,7 @@ audio.addEventListener("ended", () => {
 
 /**
  * Sorts the songs in the user data.
- * 
+ *
  * @returns {Array} The sorted array of songs.
  */
 const sortSongs = () => {
