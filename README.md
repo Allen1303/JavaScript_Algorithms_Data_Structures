@@ -4,32 +4,38 @@
 
 ## Table of Contents | Projects
 
-+ __Pyramid Generator__
-+ __Roll Playing Game__
-+ __Calorie Counter App__
-+ __Music Player App__
+- **Pyramid Generator**
+- **Roll Playing Game**
+- **Calorie Counter App**
+- **Music Player App**
 
 ### Pyramid Generator summary
 
 In this practice project, you'll learn fundamental programming concepts in JavaScript by coding a `Pyramid Generator`. You'll learn how to work with _`arrays`_, _`strings`_, _`functions`_, _`loops`_, _`if/else`_ statements, and more.
 
 ---
+
 ### Role Playing Game summary
+
 In this practice project, you'll learn fundamental programming concepts in`JavaScript` by coding a` Role Playing Game`. You'll learn how to work with _`arrays`_, _`strings`_, _`objects`_, _`functions`_, _`loops`_, _`if/else`_ statements, and more.
 
 ---
+
 ### Calorie Counter App
 
 In this calorie counter project, you'll learn how to validate user input, perform calculations based on that input, and `dynamically` `update your interface` to display the results.
 In this practice project, you'll learn `basic regular expressions`, `template literals`, the `addEventListener() method`, and more.
 
 ---
+
 ### Music Player App
+
 We will learn about some essential `string` and `array methods` like the `find()`, `forEach()`, `map()`, and `join()`. These methods are `crucial` for developing dynamic web applications.
 
 In this project, we code a basic `MP3 player` using `HTM`L, `CSS`, and `JavaScript`. The project covers fundamental concepts such as handling `audio playback`, `managing a playlist`, `implementing play`, `pause`, `next`, `previous`, and `shuffle functionalities`. You'll even learn how to dynamically update your user interface based on the current song.
 
 ---
+
 ### Pyramid Project Key Concepts
 
 - `Looping:` The project utilizes for loops to _`iterate`_ over rows and columns, which are fundamental programming concepts.
@@ -80,9 +86,10 @@ _Overall, by building this project, beginners would reinforce their understandin
 ---
 
 ### RPG Project Key Concepts
+
 Game Features Summary:
 
-1. __`Player Attributes`__: The game keeps track of the player's attributes such as experience points (xp), health, gold, current weapon, and inventory.
+1. **`Player Attributes`**: The game keeps track of the player's attributes such as experience points (xp), health, gold, current weapon, and inventory.
 
 ```javascript
 let xp = 0;
@@ -90,43 +97,64 @@ let health = 100;
 let gold = 50;
 let currentWeapon = 0;
 let inventory = ["stick"];
-
 ```
-2. __`Game Locations`__: The game has various locations that the player can navigate through, each with its own set of options and descriptions.
-  
-  ```javascript
-  const locations = [
+
+2. **`Game Locations`**: The game has various locations that the player can navigate through, each with its own set of options and descriptions.
+
+```javascript
+const locations = [
   {
     name: "Town square",
     "button text": ["Go to store", "Go to cave", "Fight dragon"],
     "button functions": [goStore, goCave, fightDragon],
-    text: "You are in the town square. You see a sign that says \"Store\"."
-  }
+    text: 'You are in the town square. You see a sign that says "Store".',
+  },
   // Other location objects...
-  ];
-
+];
 ```
-3. __`Player Actions`__: The player can perform actions such as buying health, buying weapons, fighting `monsters`, `dodging attacks`, and initiating `special events`.
+
+3. **`Player Actions`**: The player can perform actions such as buying health, buying weapons, fighting `monsters`, `dodging attacks`, and initiating `special events`.
 
 ```javascript
-function buyHealth() { /* Function to buy health */}
-function buyWeapon() { /* Function to buy a weapon */ }
-function attack() { /* Function to attack a monster */ }
-function dodge() { /* Function to dodge attacks */ }
-function easterEgg() { /* Function to initiate an Easter egg event */ }
+function buyHealth() {
+  /* Function to buy health */
+}
+function buyWeapon() {
+  /* Function to buy a weapon */
+}
+function attack() {
+  /* Function to attack a monster */
+}
+function dodge() {
+  /* Function to dodge attacks */
+}
+function easterEgg() {
+  /* Function to initiate an Easter egg event */
+}
 ```
 
-4. __`Game Progression`__: The game allows for progression through defeating monsters, winning battles, or reaching specific milestones.
+4. **`Game Progression`**: The game allows for progression through defeating monsters, winning battles, or reaching specific milestones.
+
 ```javascript
-function defeatMonster() { /* Function to handle defeating a monster */ }
-function lose() { /* Function to handle the player losing the game */ }
-function winGame() { /* Function to handle the player winning the game */ }
+function defeatMonster() {
+  /* Function to handle defeating a monster */
+}
+function lose() {
+  /* Function to handle the player losing the game */
+}
+function winGame() {
+  /* Function to handle the player winning the game */
+}
 ```
+
 These features provide a comprehensive gameplay experience with various` interactions` and `challenges` for the `player.`
 
 ---
+
 ### Calorie Counter App Key Concepts
-1.  __Input Validation Functions (cleanInputString & isInvalidInput):__
+
+1.  **Input Validation Functions (cleanInputString & isInvalidInput):**
+
 ```javascript
 // Removes special characters from input string
 function cleanInputString(str) {
@@ -140,12 +168,18 @@ function isInvalidInput(str) {
   return str.match(regex);
 }
 ```
+
 #### Explanation:
+
 These functions ensure user input quality for calorie values.
-+ __cleanInputString__ removes characters like `"+" or "-"`, which could interfere with numerical parsing. It uses a regular expression` (/[+-\s]/g)` to find these characters and replaces them with an empty string.
-+ __isInvalidInput__ checks if the input string contains scientific notation `(e.g., "1.2e3")`. This pattern is considered invalid for calorie values. It also uses a regular expression `(/\d+e\d+/i)` to detect this pattern and returns a match if found `(indicating an error)`.
+
+- **cleanInputString** removes characters like `"+" or "-"`, which could interfere with numerical parsing. It uses a regular expression` (/[+-\s]/g)` to find these characters and replaces them with an empty string.
+- **isInvalidInput** checks if the input string contains scientific notation `(e.g., "1.2e3")`. This pattern is considered invalid for calorie values. It also uses a regular expression `(/\d+e\d+/i)` to detect this pattern and returns a match if found `(indicating an error)`.
+
 ---
-2. __Adding New Entries (addEntry):__
+
+2. **Adding New Entries (addEntry):**
+
 ```javascript
 function addEntry() {
   // Get target input container based on dropdown selection
@@ -161,15 +195,20 @@ function addEntry() {
   targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
 }
 ```
+
 #### Explanation:
+
 This function dynamically `adds new entry` sections for users to input calorie information for specific meals or exercises.
-+ It retrieves the target input container based on the selected value in the `entryDropdown`.
-+ It calculates the new entry number based on existing entries in the target container.
-+ It constructs an HTML string containing the necessary elements `(labels and input fields)` for the new entry.
-+ Finally, it uses `insertAdjacentHTML` to insert this `HTML string` at the end of the target container, effectively adding a new section for user input.
+
+- It retrieves the target input container based on the selected value in the `entryDropdown`.
+- It calculates the new entry number based on existing entries in the target container.
+- It constructs an HTML string containing the necessary elements `(labels and input fields)` for the new entry.
+- Finally, it uses `insertAdjacentHTML` to insert this `HTML string` at the end of the target container, effectively adding a new section for user input.
 
 ---
-3. __Calorie Calculation and Display (calculateCalories):__
+
+3. **Calorie Calculation and Display (calculateCalories):**
+
 ```javascript
 function calculateCalories(e) {
   e.preventDefault();
@@ -201,16 +240,21 @@ function calculateCalories(e) {
   output.classList.remove("hide");
 }
 ```
-#### Explanation:
-This function handles the core `calorie calculation` and displays the results.
-+ It retrieves the number input elements for each meal and exercise section using `querySelectorAll`.
-+ It calls `getCaloriesFromInputs` to calculate the total calorie value for each section, handling potential errors.
-+ It calculates the total consumed calories and remaining calories based on user input and budget.
-+ It determines whether there's a calorie `surplus` or `deficit`.
-+ Finally, it constructs and displays the calculated information within the output element using innerHTML. It also `removes` the `"hide"` class to make the output visible.
 
---- 
- 4. __Clearing the Form (clearForm)__:
+#### Explanation:
+
+This function handles the core `calorie calculation` and displays the results.
+
+- It retrieves the number input elements for each meal and exercise section using `querySelectorAll`.
+- It calls `getCaloriesFromInputs` to calculate the total calorie value for each section, handling potential errors.
+- It calculates the total consumed calories and remaining calories based on user input and budget.
+- It determines whether there's a calorie `surplus` or `deficit`.
+- Finally, it constructs and displays the calculated information within the output element using innerHTML. It also `removes` the `"hide"` class to make the output visible.
+
+---
+
+4.  **Clearing the Form (clearForm)**:
+
 ```javascript
 function clearForm() {
   // Get all input containers
@@ -227,17 +271,22 @@ function clearForm() {
   output.classList.add("hide");
 }
 ```
+
 #### Explanation:
+
 This function` resets` the form by `clearing` all input containers and resetting the budget input and output.
-+ It retrieves all input containers using `querySelectorAll` and converts the `NodeList` to an array.
-+ It clears the content of each input container by setting the `innerHTML` to an empty string.
-+ It resets the budget number input and output elements by setting their values to empty strings.
-+ It also adds the `"hide"` class to the output element to hide the calorie information display.
+
+- It retrieves all input containers using `querySelectorAll` and converts the `NodeList` to an array.
+- It clears the content of each input container by setting the `innerHTML` to an empty string.
+- It resets the budget number input and output elements by setting their values to empty strings.
+- It also adds the `"hide"` class to the output element to hide the calorie information display.
 
 ---
+
 ### Music Player App Key Concepts
 
-1. __DOM Manipulation__:
+1. **DOM Manipulation**:
+
 ```javascript
 const playButton = document.getElementById("play");
 const pauseButton = document.getElementById("pause");
@@ -245,11 +294,14 @@ const nextButton = document.getElementById("next");
 const previousButton = document.getElementById("previous");
 const shuffleButton = document.getElementById("shuffle");
 ```
-__Explanation__:
+
+**Explanation**:
 DOM manipulation is the process of accessing, modifying, or creating `HTML elements` on a web page using JavaScript. In this code snippet, `document.getElementById()` is used to select specific elements from the `HTML document` by their ID attribute, allowing interaction with those elements in JavaScript.
 
 ---
-2. __Event Handling__:
+
+2. **Event Handling**:
+
 ```javascript
 playButton.addEventListener("click", () => {
   if (userData?.currentSong === null) {
@@ -259,20 +311,26 @@ playButton.addEventListener("click", () => {
   }
 });
 ```
-__Explanation__:
+
+**Explanation**:
 Event handling involves responding to user interactions or actions on a web page. Here, the `addEventListener()` method is used to attach a click event listener to the play button. When the button is clicked, it executes the provided `callback function`, which determines whether to play the first song or the current song based on the player's state.
 
 ---
-3. __Array Manipulation and Iteration__:
+
+3. **Array Manipulation and Iteration**:
+
 ```javascript
 const currentSongIndex = getCurrentSongIndex();
 const nextSong = userData?.songs[currentSongIndex + 1];
 ```
-__Explanation__:
+
+**Explanation**:
 Working with arrays is essential in web development. This project demonstrates array manipulation techniques such as accessing `elements`, finding `indexes`, and iterating through `arrays` to perform specific tasks. In the provided code, the current song index is retrieved, and the next song to play is determined by accessing the next element in the array.
 
 ---
-4. __Conditional Logic__:
+
+4. **Conditional Logic**:
+
 ```javascript
 if (nextSongExists) {
   playNextSong();
@@ -285,7 +343,8 @@ if (nextSongExists) {
   setPlayButtonAccessibleText();
 }
 ```
-__Explanation__:
+
+**Explanation**:
 Conditional logic allows developers to execute different code blocks based on certain conditions. In this snippet, the code checks if there is a next song to play. If `nextSongExists` is true, the next song is played; otherwise, the player is reset, and the `UI` is updated accordingly.
 
 ---
