@@ -246,7 +246,7 @@ const previousButton = document.getElementById("previous");
 const shuffleButton = document.getElementById("shuffle");
 ```
 __Explanation__:
-DOM manipulation is the process of accessing, modifying, or creating HTML elements on a web page using JavaScript. In this code snippet, document.getElementById() is used to select specific elements from the HTML document by their ID attribute, allowing interaction with those elements in JavaScript.
+DOM manipulation is the process of accessing, modifying, or creating `HTML elements` on a web page using JavaScript. In this code snippet, `document.getElementById()` is used to select specific elements from the `HTML document` by their ID attribute, allowing interaction with those elements in JavaScript.
 
 ---
 2. __Event Handling__:
@@ -260,7 +260,7 @@ playButton.addEventListener("click", () => {
 });
 ```
 __Explanation__:
-Event handling involves responding to user interactions or actions on a web page. Here, the addEventListener() method is used to attach a click event listener to the play button. When the button is clicked, it executes the provided callback function, which determines whether to play the first song or the current song based on the player's state.
+Event handling involves responding to user interactions or actions on a web page. Here, the `addEventListener()` method is used to attach a click event listener to the play button. When the button is clicked, it executes the provided `callback function`, which determines whether to play the first song or the current song based on the player's state.
 
 ---
 3. __Array Manipulation and Iteration__:
@@ -269,7 +269,7 @@ const currentSongIndex = getCurrentSongIndex();
 const nextSong = userData?.songs[currentSongIndex + 1];
 ```
 __Explanation__:
-Working with arrays is essential in web development. This project demonstrates array manipulation techniques such as accessing elements, finding indexes, and iterating through arrays to perform specific tasks. In the provided code, the current song index is retrieved, and the next song to play is determined by accessing the next element in the array.
+Working with arrays is essential in web development. This project demonstrates array manipulation techniques such as accessing `elements`, finding `indexes`, and iterating through `arrays` to perform specific tasks. In the provided code, the current song index is retrieved, and the next song to play is determined by accessing the next element in the array.
 
 ---
 4. __Conditional Logic__:
@@ -286,6 +286,6 @@ if (nextSongExists) {
 }
 ```
 __Explanation__:
-Conditional logic allows developers to execute different code blocks based on certain conditions. In this snippet, the code checks if there is a next song to play. If nextSongExists is true, the next song is played; otherwise, the player is reset, and the UI is updated accordingly.
+Conditional logic allows developers to execute different code blocks based on certain conditions. In this snippet, the code checks if there is a next song to play. If `nextSongExists` is true, the next song is played; otherwise, the player is reset, and the `UI` is updated accordingly.
 
 ---
