@@ -8,6 +8,7 @@
 - **Roll Playing Game**
 - **Calorie Counter App**
 - **Music Player App**
++ __Date Formatter__
 
 ### Pyramid Generator summary
 
@@ -15,24 +16,29 @@ In this practice project, you'll learn fundamental programming concepts in JavaS
 
 ---
 
-### Role Playing Game summary
+## Role Playing Game summary
 
 In this practice project, you'll learn fundamental programming concepts in`JavaScript` by coding a` Role Playing Game`. You'll learn how to work with _`arrays`_, _`strings`_, _`objects`_, _`functions`_, _`loops`_, _`if/else`_ statements, and more.
 
 ---
 
-### Calorie Counter App
+## Calorie Counter App
 
 In this calorie counter project, you'll learn how to validate user input, perform calculations based on that input, and `dynamically` `update your interface` to display the results.
 In this practice project, you'll learn `basic regular expressions`, `template literals`, the `addEventListener() method`, and more.
 
 ---
 
-### Music Player App
+## Music Player App
 
 We will learn about some essential `string` and `array methods` like the `find()`, `forEach()`, `map()`, and `join()`. These methods are `crucial` for developing dynamic web applications.
 
 In this project, we code a basic `MP3 player` using `HTM`L, `CSS`, and `JavaScript`. The project covers fundamental concepts such as handling `audio playback`, `managing a playlist`, `implementing play`, `pause`, `next`, `previous`, and `shuffle functionalities`. You'll even learn how to dynamically update your user interface based on the current song.
+
+---
+## Date Formatter
+Working with dates in JavaScript can be challenging. You have to navigate various `methods`, `formats`, and `time zones`. In this project, we learn how to work with the JavaScript `Date object`, including its methods and properties. You'll also learn how to correctly format dates.
+This project will cover concepts such as the `getDate()`, `getMonth()`, and `getFullYear()` methods.
 
 ---
 
@@ -347,4 +353,66 @@ if (nextSongExists) {
 **Explanation**:
 Conditional logic allows developers to execute different code blocks based on certain conditions. In this snippet, the code checks if there is a next song to play. If `nextSongExists` is true, the next song is played; otherwise, the player is reset, and the `UI` is updated accordingly.
 
+---
+### Date Formatter Key Concepts
+
+1. #### DOM Manipulation:
+_The Document Object Model `(DOM)` is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content_.
+  
+  ```javascript
+  Example:
+
+  const currentDateParagraph = document.getElementById("current-date");
+const dateOptionsSelectElement = document.getElementById("date-options");
+const formattedDateParagraph = document.getElementById("formatted-date");
+
+  Context: document.getElementById("current-date") gets a reference to the paragraph element where the date will be displayed. document.getElementById("date-options") gets a reference to the dropdown menu used for selecting date formats.
+  ```
+
+2. #### Date Object:
+_The Date object in JavaScript is used to work with dates and times. It provides methods to get and set the `day`, `month`, `year`, `hours`, `minutes`, and other date parts_.
+  ```javascript
+  Example:
+
+  const date = new Date();
+const day = date.getDate();
+const month = date.getMonth() + 1; // Months are zero-based
+const year = date.getFullYear();
+const hours = date.getHours();
+const minutes = date.getMinutes();
+
+Context: A new Date object is created to get the current date and time. date.getDate(), date.getMonth() + 1, date.getFullYear(), date.getHours(), and date.getMinutes() extract the specific parts of the date needed for formatting.
+```
+
+3. #### String Interpolation and Formatting:
+ _String interpolation allows you to embed expressions inside string literals, using `template literals` with backticks `(``)`_.
+```javascript
+Example:
+
+const formattedDate = `${day}-${month}-${year}`;
+currentDateParagraph.textContent = formattedDate;
+
+Context: ${day}-${month}-${year} formats the date as a string in the day-month-year format. currentDateParagraph.textContent is then used to set the text content of the paragraph element to this formatted date string.
+```
+
+4. #### Event Handling and Switch Statement:
+_An event listener is used to execute code when an event occurs (`e.g., user selects a date format`). A switch statement is used to perform different actions based on different conditions_.
+```javascript
+Example:
+
+dateOptionsSelectElement.addEventListener("change", () => {
+  switch (dateOptionsSelectElement.value) {
+    case "yyyy-mm-dd":
+      currentDateParagraph.textContent = formattedDate.split("-").reverse().join("-");
+      break;
+    case "mm-dd-yyyy-h-mm":
+      currentDateParagraph.textContent = `${month}-${day}-${year} ${hours} Hours ${minutes} Minutes`;
+      break;
+    default:
+      currentDateParagraph.textContent = formattedDate;
+  }
+});
+
+Context: An event listener is added to the dropdown menu to listen for changes. When a new option is selected, the switch statement checks the value and formats the date accordingly. For yyyy-mm-dd, the date string is split, reversed, and joined. For mm-dd-yyyy-h-mm, the date and time are formatted with hours and minutes included.
+```
 ---
