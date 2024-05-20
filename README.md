@@ -24,21 +24,21 @@ In this practice project, you'll learn fundamental programming concepts in`JavaS
 
 ## Calorie Counter App
 
-In this calorie counter project, you'll learn how to validate user input, perform calculations based on that input, and `dynamically` `update your interface` to display the results.
-In this practice project, you'll learn `basic regular expressions`, `template literals`, the `addEventListener() method`, and more.
+In this calorie counter project, you'll learn how to validate user input, perform calculations based on that input, and _`dynamically` `update your interface`_ to display the results.
+In this practice project, you'll learn _`basic regular expressions`, `template literals`_, the _`addEventListener() method`_, and more.
 
 ---
 
 ## Music Player App
 
-We will learn about some essential `string` and `array methods` like the `find()`, `forEach()`, `map()`, and `join()`. These methods are `crucial` for developing dynamic web applications.
+We will learn about some essential _`string` and `array methods` like the `find()`, `forEach()`, `map()`, and `join()`_. These methods are _`crucial`_ for developing dynamic web applications.
 
-In this project, we code a basic `MP3 player` using `HTM`L, `CSS`, and `JavaScript`. The project covers fundamental concepts such as handling `audio playback`, `managing a playlist`, `implementing play`, `pause`, `next`, `previous`, and `shuffle functionalities`. You'll even learn how to dynamically update your user interface based on the current song.
+In this project, we code a basic _`MP3 player` using `HTM`L, `CSS`, and `JavaScript`_. The project covers fundamental concepts such as handling _`audio playback`, `managing a playlist`, `implementing play`, `pause`, `next`, `previous`, and `shuffle functionalities`_. You'll even learn how to dynamically update your user interface based on the current song.
 
 ---
 ## Date Formatter
-Working with dates in JavaScript can be challenging. You have to navigate various `methods`, `formats`, and `time zones`. In this project, we learn how to work with the JavaScript `Date object`, including its methods and properties. You'll also learn how to correctly format dates.
-This project will cover concepts such as the `getDate()`, `getMonth()`, and `getFullYear()` methods.
+Working with dates in JavaScript can be challenging. You have to navigate various _`methods`, `formats`_, and _`time zones`_. In this project, we learn how to work with the JavaScript _`Date object`_, including its methods and properties. You'll also learn how to correctly format dates.
+This project will cover concepts such as the _`getDate()`, `getMonth()`, and `getFullYear()`_ methods.
 
 ---
 
