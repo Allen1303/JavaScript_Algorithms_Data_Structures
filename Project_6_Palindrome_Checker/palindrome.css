@@ -1,0 +1,26 @@
+h1 {
+  margin-left: 8rem;
+  margin-bottom: 2rem;
+  font-weight: bolder;
+}
+.row {
+  border: 1px solid black;
+  padding: 3rem 4rem 3rem;
+  width: 45%;
+  border-radius: 8px;
+}
+#text-input {
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 3rem;
+  border: none;
+  border-bottom: 2px solid #0d6efd;
+}
+/* Make the entire text bold */
+/* #result {
+  font-weight: bold;
+} */
+#result {
+  font-weight: bold; /* Make the entire text bold */
+}
