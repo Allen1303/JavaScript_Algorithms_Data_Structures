@@ -28,3 +28,6 @@ h1 {
 #result {
   font-weight: bold; /* Make the entire text bold */
 }
+#result span {
+  font-weight: normal;
+}

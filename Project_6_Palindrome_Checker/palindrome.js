@@ -3,10 +3,7 @@
 const inputField = document.getElementById("text-input");
 const checkButton = document.getElementById("check-btn");
 const result = document.getElementById("result");
-/**
- * @param {Adds an event listener to the checkButton element that checks if the input value is a palindrome.}
- * @param {Displays a message indicating whether the input value is a palindrome or not.}
- */
+
 checkButton.addEventListener("click", () => {
   const inputValue = inputField.value;
 
@@ -52,3 +49,14 @@ checkButton.addEventListener("click", () => {
   // Check if the input value is "five|_/|four"
   inputValue === "five|_/|four" ? (result.innerText = "five|_/|four is not a Palindrome") : null;
 });
+
+
+
+
+
+
+
+
+
+
+
