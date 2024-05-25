@@ -9,6 +9,7 @@
 - **Calorie Counter App**
 - **Music Player App**
 + __Date Formatter__
++ __Football Cards Page__
 
 ### Pyramid Generator summary
 
@@ -41,6 +42,10 @@ Working with dates in JavaScript can be challenging. You have to navigate variou
 This project will cover concepts such as the _`getDate()`, `getMonth()`, and `getFullYear()`_ methods.
 
 ---
+
+## Football Cards
+One common aspect of building web applications is: processing datasets, and then outputting information to the screen. In this sports team cards project, we learn how to work with _`DOM manipulation`_, _`object destructuring`_, _`event handling`_, and _`data filtering`_.
+This project will cover concepts like _`switch statements`, `default parameters`, `Object.freeze()`, the `map()`_ method, and more.
 
 ### Pyramid Project Key Concepts
 
