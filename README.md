@@ -479,4 +479,5 @@ playersDropdownList.addEventListener("change", (e) => {
 });
 
 This code adds an event listener to a dropdown list, which filters and displays player cards based on the selected value.
+
 ```
