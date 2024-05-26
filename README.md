@@ -44,8 +44,7 @@ This project will cover concepts such as the _`getDate()`, `getMonth()`, and `ge
 ---
 
 ## Football Cards
-One common aspect of building web applications is: processing datasets, and then outputting information to the screen. In this sports team cards project, we learn how to work with _`DOM manipulation`_, _`object destructuring`_, _`event handling`_, and _`data filtering`_.
-This project will cover concepts like _`switch statements`, `default parameters`, `Object.freeze()`, the `map()`_ method, and more.
+One common aspect of building web applications is: processing datasets, and then outputting information to the screen. In this sports team cards project, we learn how to work with _`DOM manipulation`_, _`object destructuring`_, _`event handling`_, and _`data filtering`_. This project will cover concepts like _`switch statements`, `default parameters`, `Object.freeze()`, the `map()`_ method, and more.
 
 ### Pyramid Project Key Concepts
 
@@ -415,3 +414,65 @@ dateOptionsSelectElement.addEventListener("change", () => {
 Context: An event listener is added to the dropdown menu to listen for changes. When a new option is selected, the switch statement checks the value and formats the date accordingly. For yyyy-mm-dd, the date string is split, reversed, and joined. For mm-dd-yyyy-h-mm, the date and time are formatted with hours and minutes included.
 ```
 ---
+### Football Cards Project Key JavaScript Concepts
+
+1. #### DOM Manipulation
+Explanation: The __Document Object Model__ `(DOM)` represents the structure of an `HTML` document as a tree of objects. JavaScript can be used to manipulate the DOM to `dynamically` `update` content, structure, and styles.
+```javascript
+Example:
+
+const teamName = document.getElementById("team");
+teamName.textContent = team;
+```
+2. #### Object Destructuring
+Explanation: `Destructuring` is a syntax that allows you to unpack `values` from `arrays` or `properties` from` objects` into distinct variables.
+```javascript
+Example:
+
+const { sport, team, year, players } = myFavoriteFootballTeam;
+const { coachName } = myFavoriteFootballTeam.headCoach;
+
+ 
+This code extracts properties from the myFavoriteFootballTeam object into individual variables.
+
+```
+3. #### Array Methods (filter, map, join)
+Explanation: JavaScript provides several `built-in methods` to work with arrays. `filter` creates a new array with elements that pass a `test`, `map` creates a new array by applying a function to each element, and join concatenates all elements of an array into a string.
+```javascript
+const setPlayerCards = (arr = players) => {
+  playerCards.innerHTML += arr
+    .map(({ name, position, number, isCaptain, nickname }) => `
+      <div class="player-card">
+        <h2>${isCaptain ? "(Captain)" : ""} ${name}</h2>
+        <p>Position: ${position}</p>
+        <p>Number: ${number}</p>
+        <p>Nickname: ${nickname !== null ? nickname : "N/A"}</p>
+      </div>
+    `)
+    .join("");
+};
+
+This code uses map to transform each player object into an HTML string, and join to concatenate them into a single string.
+
+```
+4. #### Event Handling
+Explanation: `Event handling` is the process of using JavaScript to respond to user interactions, such as `clicks`, `changes`, and other actions on `HTML` elements.
+```javascript
+playersDropdownList.addEventListener("change", (e) => {
+  playerCards.innerHTML = "";
+
+  switch (e.target.value) {
+    case "nickname":
+      setPlayerCards(players.filter((player) => player.nickname !== null));
+      break;
+    case "forward":
+      setPlayerCards(players.filter((player) => player.position === "forward"));
+      break;
+    // ... other cases
+    default:
+      setPlayerCards();
+  }
+});
+
+This code adds an event listener to a dropdown list, which filters and displays player cards based on the selected value.
+```
