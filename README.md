@@ -441,7 +441,7 @@ This code extracts properties from the myFavoriteFootballTeam object into indivi
 
 ```
 3. #### Array Methods (filter, map, join)
-Explanation: JavaScript provides several `built-in methods` to work with arrays. `filter` creates a new array with elements that pass a `test`, `map` creates a new array by applying a function to each element, and join concatenates all elements of an array into a string.
+Explanation: JavaScript provides several `built-in methods` to work with arrays. `filter()` creates a new array with elements that pass a test, `map()` creates a new array by applying a function to each element, and `join()` concatenates all elements of an array into a string.
 ```javascript
 const setPlayerCards = (arr = players) => {
   playerCards.innerHTML += arr
