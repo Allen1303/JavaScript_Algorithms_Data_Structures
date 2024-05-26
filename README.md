@@ -3,12 +3,16 @@
 ### Learning JavaScript Algoritm and Data Structure by Building Projects from the FreeCodeCamp certification course
 
 ## Table of Contents | Projects
-
 - **Pyramid Generator**
+
 - **Roll Playing Game**
+
 - **Calorie Counter App**
+
 - **Music Player App**
-+ __Date Formatter__
+
++ **Date Formatter**
+
 + __Football Cards Page__
 
 ### Pyramid Generator summary
