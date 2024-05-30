@@ -15,6 +15,8 @@
 
 + __Football Cards Page__
 
++__To Do App__
+
 ### Pyramid Generator summary
 
 In this practice project, you'll learn fundamental programming concepts in JavaScript by coding a `Pyramid Generator`. You'll learn how to work with _`arrays`_, _`strings`_, _`functions`_, _`loops`_, _`if/else`_ statements, and more.
@@ -41,14 +43,23 @@ We will learn about some essential _`string` and `array methods` like the `find(
 In this project, we code a basic _`MP3 player` using `HTM`L, `CSS`, and `JavaScript`_. The project covers fundamental concepts such as handling _`audio playback`, `managing a playlist`, `implementing play`, `pause`, `next`, `previous`, and `shuffle functionalities`_. You'll even learn how to dynamically update your user interface based on the current song.
 
 ---
-## Date Formatter
+## Date Formatter Summary
 Working with dates in JavaScript can be challenging. You have to navigate various _`methods`, `formats`_, and _`time zones`_. In this project, we learn how to work with the JavaScript _`Date object`_, including its methods and properties. You'll also learn how to correctly format dates.
 This project will cover concepts such as the _`getDate()`, `getMonth()`, and `getFullYear()`_ methods.
 
 ---
 
-## Football Cards
+## Football Cards Summary 
 One common aspect of building web applications is: processing datasets, and then outputting information to the screen. In this sports team cards project, we learn how to work with _`DOM manipulation`_, _`object destructuring`_, _`event handling`_, and _`data filtering`_. This project will cover concepts like _`switch statements`, `default parameters`, `Object.freeze()`, the `map()`_ method, and more.
+
+---
+
+## To Do App Summary
+`Local storage` is a web browser feature that lets web applications store `key-value pairs` persistently within a user's browser. This allows web apps to `save data` during one session, then `retrieve it` in a later page session.
+
+In this TODO application, we learnt how to handle form inputs, manage local storage, perform CRUD (`Create`, `Read`, `Update`, `Delete`) operations on tasks, implement `event listeners`, and `toggle UI` elements.
+
+---
 
 ### Pyramid Project Key Concepts
 
